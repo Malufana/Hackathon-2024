@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>ConnectTalks</title>
+
+    <!-- LOGO NA ABA DA PAGINA -->
+    <link rel="shortcut icon" href="../imgs/logo_oficial.png">
+
+</head>
+
+<body>
+    <!-- TOPO-CORPO PAGINA -->
+    <header class="principal">
+        <div id="topo_cabecalho">
+            <div class="container">
+                <div class="grid_nav">
+                    <!-- LOGO -->
+                    <div class="logo_container">
+                        <a href="index.html">
+                            <img src="../imgs/logo_oficial.png" alt="">
+                        </a>
+                    </div>
+                    <!-- NAVBAR -->
+                    <div class="container">
+                        <nav id="navbar">
+                            <ul class="container">
+                                <li><a href="">Calendário</a></li>
+                                <li><a href="">Histórico</a></li>
+                                <li><a href="">Sobre Nós</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CORPO PAGINA -->
+    <main>
+        <div class="parent">
+            <div class="desc">
+                <!-- <h1 class="text">Chatbot</h1> -->
+                <button id="init">START CHAT</button>
+            </div>
+            <div>
+                <!-- <img src="./WhatsApp Image 2024-07-05 at 11.32.27.jpeg" alt="" class="bot-img"> -->
+            </div>
+        </div>
+
+        <!-- CHATBOT? -->
+        <div id="test" style="position: fixed;top: 4rem;right: 8rem;display: none;">
+            <div class="child" id="chatbot">
+                <div class="header">
+                    <div class="h-child">
+                        <!-- AVATAR NO CHATBOT -->
+                        <img src="./WhatsApp Image 2024-07-05 at 11.32.27.jpeg" alt="avatar" id="avatar">
+                        <div>
+                            <span class="name">Chatbot</span>
+                            <br>
+                            <span style="color:lawngreen">online</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="refBtn"><i class="fa fa-refresh" onclick="initChat()"></i></button>
+                    </div>
+                </div>
+                <div id="chat-box">
+
+                </div>
+                <div class="footer_chat">
+                    <span>AAAA</span>
+                </div>
+            </div>
+        </div>
+    </main> 
+
+    <!-- PÉ-CORPO PAGINA -->
+    <footer class="footer">
+        <div class="container">
+            <div class="container-grid_footer">
+                <div class="logo_Bosch">
+                    <img src="../imgs/Bosch_logo.png" alt="">
+                </div>
+                <div class="container">
+                    <nav id="navbar">
+                        <ul class="container">
+                            <li><a href="">Calendário</a></li>
+                            <li><a href="">Histórico</a></li>
+                            <li><a href="">Sobre Nós</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./chatbot.js"></script>
+</body>
+</html>
